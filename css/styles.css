@@ -44,6 +44,7 @@ h1 {
 p {
   margin-top: 0;
   font-size: 15px;
+  padding-bottom: 1rem;
 }
 
 a {
@@ -249,7 +250,7 @@ h1 {
 }
 
 .hero__text {
-  text-align: left;
+  text-align: center;
   padding-bottom: 1.5rem;
 }
 
@@ -260,14 +261,6 @@ h1 {
   border-radius: 100px;
   padding: 2rem;
   color: white;
-  display: flex;
   justify-content: center;
-  text-align: center;
   cursor: pointer;
-}
-
-.btn__arrow {
-  width: 3rem;
-  margin: 0;
-  padding-left: 5px;
 }
