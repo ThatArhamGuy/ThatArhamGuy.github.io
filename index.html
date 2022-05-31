@@ -8,6 +8,301 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
+    <div class="hero">
+      <nav class="nav collapsible">
+        <a href="/"><img class="nav__brand" src="image/logo.svg" alt="" /></a>
+        <button
+          class="menu nav__toggler"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg width="40" height="40" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a target="_blank" href="https://arhamjshah.tech/blog">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a target="_blank" href="https://arhamjshah.tech/blog">My Works</a>
+          </li>
+          <li class="nav__item">
+            <a target="_blank" href="https://arhamjshah.tech/blog">Résumé</a>
+          </li>
+          <li class="nav__item">
+            <a target="_blank" href="https://arhamjshah.tech/blog">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container block hero">
+        <div class="hero__text">
+          <h1>Hello!,<br> My Name is Arham.</h1>
+          <h3>I'm a<br /><strong>Webdesigner • Reader • Tinkerer</strong></h3>
+          <p>
+            This is my Portofolio site, Here I showcase my works and things I'm
+            reading/watching.
+          </p>
+          <a href="" class="btn">Let's Go </a>
+        </div>
+      </div>
+    </div>
+    <div class="block container work">
+      <h2 id="work" class="showcase__header">My Works.</h2>
+      <div class="grid grid--1x3">
+        <div class="wrapper__big">
+          <div class="grid">
+            <img
+              class="wrapper__image"
+              src="/image/site images/Site01.png"
+              alt=""
+            />
+            <div class="wrapper__text">
+              <a href="https://arhamjshah.tech">
+                <h3 class="wrapper__header">arhamjshah.tech</h3>
+              </a>
+              <p>
+                This is My site which I use <br />
+                to post my notes and <br />
+                newsletter.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__big">
+          <div class="grid">
+            <img
+              class="wrapper__image"
+              src="/image/site images/site02.png"
+              alt=""
+            />
+            <div class="wrapper__text">
+              <a href="https://homepage-eta-ruddy.vercel.app/">
+                <h3 class="wrapper__header">Homepage</h3>
+              </a>
+              <p>
+                This site holds link to all my <br />socials. This site was inspired
+                <br />
+                by Linktree.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__big">
+          <div class="grid">
+            <img
+              class="wrapper__image"
+              src="/image/site images/site03.png"
+              alt=""
+            />
+            <div class="wrapper__text">
+              <a href="https://frey-labs-site-copy.vercel.app/">
+                <h3 class="wrapper__header">Grid site</h3>
+              </a>
+              <p>
+                This is my first portofolio-esk <br />
+                site. It was inspired by<br />
+                Freylabs' Site.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="grid grid--1x3">
+        <div class="wrapper__big">
+          <div class="grid">
+            <img
+              class="wrapper__image"
+              src="/image/site images/site04.png"
+              alt=""
+            />
+            <div class="wrapper__text">
+              <a href="https://reactsite-six.vercel.app/">
+                <h3 class="wrapper__header">React Portofolio</h3>
+              </a>
+              <p>
+                This is My second attempt at<br />
+                a portofolio site using<br />
+                react.js.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div class="block container grid">
+      <div class="doing">
+        <h2 id="doing">Reading or Watching.</h2>
+        <div class="grid">
+          <div>
+            <div class="wrapper__small grid">
+              <img
+                class="wrapper__small__img"
+                src="/image/site images/poster1.jpg"
+                alt=""
+              />
+              <div class="wrapper__text">
+                <h5 class="wrapper__header">SW: Obi-Wan Kenobi</h5>
+                <p>What can I say? I’m a Star Wars Fan</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="wrapper__small grid">
+              <img
+                class="wrapper__small__img"
+                src="/image/site images/poster2.jpg"
+                alt=""
+              />
+              <div class="wrapper__text">
+                <h5 class="wrapper__header">The Stand</h5>
+                <p>I just wanted to read this.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="wrapper__small grid">
+              <img
+                class="wrapper__small__img"
+                src="/image/site images/poster3.jpg"
+                alt=""
+              />
+              <div class="wrapper__text">
+                <h5 class="wrapper__header">India’s Struggle For Freedom</h5>
+                <p>
+                  I wanted to know some history so I’m reading this. Notes for this
+                  can be found in my blog.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="nw__box">
+        <h2 id="newsletter">Subscribe to My Newsletter</h2>
+        <div class="flex">
+          <div class="newsletter">
+            <div id="mc_embed_signup">
+              <form
+                action="https://tech.us14.list-manage.com/subscribe/post?u=b09ddd7fba534faeb0b63bc98&amp;id=925108cd44"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate"
+                target="_blank"
+                novalidate
+              >
+                <div id="mc_embed_signup_scroll">
+                  <div class="mc-field-group">
+                    <label for="mce-EMAIL"
+                      >Email Address <span class="asterisk">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      value=""
+                      name="EMAIL"
+                      class="required email"
+                      id="mce-EMAIL"
+                    />
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-FNAME">First Name </label>
+                    <input
+                      type="text"
+                      value=""
+                      name="FNAME"
+                      class=""
+                      id="mce-FNAME"
+                    />
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-LNAME">Last Name </label>
+                    <input
+                      type="text"
+                      value=""
+                      name="LNAME"
+                      class=""
+                      id="mce-LNAME"
+                    />
+                  </div>
+                  <div id="mce-responses" class="clear foot">
+                    <div
+                      class="response"
+                      id="mce-error-response"
+                      style="display: none"
+                    ></div>
+                    <div
+                      class="response"
+                      id="mce-success-response"
+                      style="display: none"
+                    ></div>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px" aria-hidden="true">
+                    <input
+                      type="text"
+                      name="b_b09ddd7fba534faeb0b63bc98_925108cd44"
+                      tabindex="-1"
+                      value=""
+                    />
+                  </div>
+                  <div class="optionalParent">
+                    <div class="clear foot">
+                      <input
+                        type="submit"
+                        value="Subscribe"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        class="button"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="text">
+              <h4>PS.</h4>
+              <p>
+                I Post book notes on history and other interesting stuff, Subscribe
+                and I'll be happy. &#128516
+              </p>
+            </div>
+            <script
+              type="text/javascript"
+              src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+            ></script>
+            <script type="text/javascript">
+              (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = "EMAIL";
+                ftypes[0] = "email";
+                fnames[1] = "FNAME";
+                ftypes[1] = "text";
+                fnames[2] = "LNAME";
+                ftypes[2] = "text";
+                fnames[3] = "ADDRESS";
+                ftypes[3] = "address";
+                fnames[4] = "PHONE";
+                ftypes[4] = "phone";
+                fnames[5] = "BIRTHDAY";
+                ftypes[5] = "birthday";
+              })(jQuery);
+              var $mcj = jQuery.noConflict(true);
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
