@@ -363,10 +363,10 @@ h1 {
   text-align: right;
 }
 @media screen and (max-width: 768px) {
-  .nw__header_1 {
+  .p3__header_1 {
     text-align: center;
   }
-  .nw__header_2 {
+  .p3__header_2 {
     text-align: center;
   }
 }
