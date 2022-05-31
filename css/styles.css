@@ -287,3 +287,8 @@ h1 {
   text-align: center;
   color: #f69c75;
 }
+
+/* Showcase Header */
+.showcase__header {
+  padding: 4rem;
+}
