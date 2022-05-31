@@ -214,6 +214,11 @@ h1 {
   place-items: center;
   gap: 2rem;
 }
+
+.grid--2 {
+  display: grid;
+  gap: 4rem;
+}
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -240,6 +245,28 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex_mobile_1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.flex_mobile_2 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .flex_mobile_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex_mobile_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* Hero */
 .hero {
@@ -328,7 +355,20 @@ h1 {
 .newsletter .text {
   padding: 1rem;
 }
-
+.p3__header_1 {
+  text-align: left;
+}
+.p3__header_2 {
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .nw__header_1 {
+    text-align: center;
+  }
+  .nw__header_2 {
+    text-align: center;
+  }
+}
 #mc_embed_signup form {
   display: block;
   position: relative;
