@@ -1,23 +1,7 @@
 @import "./normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-:root {
-  --border: #b2becd;
-  --heading: #12181b;
-  --text: #454e56;
-  --bg: #dbe1e8;
-  --navtext: #fff;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --border: #dbe1e8;
-    --heading: white;
-    --text: #b2becd;
-    --bg: #18121b;
-    --navtext: #fff;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *,
 *::after,
@@ -37,10 +21,23 @@ body {
 
 /* Typography */
 h1 {
-  margin: 0;
   line-height: 5rem;
   padding-bottom: 1.5rem;
 }
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: Montserrat Alternates;
+  text-align: center;
+}
+
+h3 {
+  color: #ff4d00;
+}
+
 p {
   margin-top: 0;
   font-size: 15px;
@@ -219,6 +216,9 @@ h1 {
 
 .grid {
   display: grid;
+  place-items: center;
+
+  gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -263,4 +263,27 @@ h1 {
   color: white;
   justify-content: center;
   cursor: pointer;
+}
+
+/* Content Area */
+.wrapper__big {
+  height: 35rem;
+  width: 30rem;
+  background: rgba(220, 220, 220, 0.28);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper__big .grid {
+  gap: 0;
+  align-content: unset;
+}
+.wrapper__image {
+  width: 28rem;
+  border-radius: 5px;
+}
+
+.wrapper__text {
+  text-align: center;
+  color: #f69c75;
 }
