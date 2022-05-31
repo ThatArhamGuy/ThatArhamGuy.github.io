@@ -34,10 +34,6 @@ h6 {
   text-align: center;
 }
 
-h3 {
-  color: #ff4d00;
-}
-
 p {
   margin-top: 0;
   font-size: 15px;
@@ -286,6 +282,10 @@ h1 {
 .wrapper__text {
   text-align: center;
   color: #f69c75;
+}
+
+.wrapper__header {
+  color: #ff4d00;
 }
 
 /* Showcase Header */
