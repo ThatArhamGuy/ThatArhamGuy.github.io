@@ -1,0 +1,273 @@
+@import "./normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --border: #b2becd;
+  --heading: #12181b;
+  --text: #454e56;
+  --bg: #dbe1e8;
+  --navtext: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border: #dbe1e8;
+    --heading: white;
+    --text: #b2becd;
+    --bg: #18121b;
+    --navtext: #fff;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* Typography */
+h1 {
+  margin: 0;
+  line-height: 5rem;
+  padding-bottom: 1.5rem;
+}
+p {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* Collapsibles */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100%;
+  opacity: 1;
+}
+
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+  background-color: #18121b;
+  border-radius: 0 0 10px 10px;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item:last-of-type {
+  border-bottom: none;
+}
+
+.nav__item > a {
+  color: var(--navtext);
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: var(--accent);
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+  width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav__item {
+    border: 0;
+  }
+}
+
+/* Chevron */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 30 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* End Of Navigation Stuff */
+h1 {
+  font-family: Montserrat Subrayada;
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Containers */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Blocks */
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+/* Hero */
+.hero {
+  background-color: #f69c75;
+}
+
+.hero__text {
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+/* Button */
+.btn {
+  width: fit-content;
+  background: #ff4d00;
+  border-radius: 100px;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn__arrow {
+  width: 3rem;
+  margin: 0;
+  padding-left: 5px;
+}
